@@ -1,0 +1,266 @@
+:root {
+    /* --bg-peach: #f9cbac; */
+    --text-dark-blue: #002B49;
+    --accent-orange: #D35400;
+    --yellow-highlight: #F1C40F;
+    --card-bg: #FAE5D3;
+    /* Lighter peach for cards */
+    --footer-bg: #002B49;
+    --text-color: #333;
+}
+
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('../neue-montreal/NeueMontreal-Bold.otf');
+}
+
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('../neue-montreal/NeueMontreal-BoldItalic.otf');
+}
+
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('../neue-montreal/NeueMontreal-Italic.otf');
+}
+
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('../neue-montreal/NeueMontreal-Light.otf');
+}
+
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('../neue-montreal/NeueMontreal-LightItalic.otf');
+}
+
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('../neue-montreal/NeueMontreal-Regular.otf');
+}
+
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('../neue-montreal/NeueMontreal-RegularItalic.otf');
+}
+
+body {
+    background: url('../Rectangle\ 161.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'NeueMontreal';
+    color: var(--text-dark-blue);
+}
+
+.text-dark-blue {
+    color: var(--text-dark-blue) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.logo-placeholder i {
+    color: #3498db !important;
+    /* Light blue logomark */
+}
+
+/* Video Wrapper */
+.video-wrapper {
+    max-width: 850px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: visible;
+    /* Allow arrows to stick out */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.plyr--video {
+    border-radius: 8px;
+}
+
+
+.helper-right .arrow-curve {
+    right: 20px;
+    transform: scaleX(-1) rotate(45deg);
+}
+
+
+.click-helper {
+    background: transparent;
+    box-shadow: none;
+    top: -60px;
+}
+
+.helper-left {
+    left: -40px;
+    transform: none;
+}
+
+.helper-right {
+    right: -40px;
+    transform: none;
+}
+
+.arrow-curve {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none !important;
+}
+
+/* Re-implementing arrows with a better SVG path in HTML if needed, but CSS cleanup here */
+
+
+/* Quote Section */
+.quote-section {
+    background-color: var(--text-dark-blue);
+    /* border-bottom: 5px solid var(--accent-orange); */
+    /* Just a guess, adds nice break */
+}
+
+.sanskrit-text {
+    font-family: 'NeueMontreal';
+    font-weight: 700;
+}
+
+/* Meaning Section */
+.meaning-section {
+    background-color: var(--bg-peach);
+    color: var(--text-dark-blue);
+}
+
+/* About Section */
+.about-section {
+    background-color: var(--bg-peach);
+}
+
+.service-card {
+    background-color: #FAD7A0;
+    /* Slightly different peach/light orange */
+    /* Or use a gradient or just transparent with border? Image shows plain cards matching bg visually but distinct block */
+    background: rgba(255, 255, 255, 0.3);
+    /* Glassy feel? */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-title {
+    color: #3498db !important;
+    /* Blue */
+}
+
+.card-footer {
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card-footer:hover {
+    background-color: #00406b !important;
+}
+
+.bg-dark-blue {
+    background-color: var(--text-dark-blue) !important;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: var(--footer-bg);
+    color: white;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo i {
+    color: #3498db !important;
+}
+
+/* Landing Page Specific */
+.landing-page {
+    /* Ensure background image covers */
+    min-height: 100vh;
+}
+
+.calendar-card {
+    background: #FFF8E7;
+    /* Light creamy background from image */
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.calendar-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-image-wrapper {
+    background: #FFD1A9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+    /* Maintain aspect ratio if needed, or just standard 1:1 */
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image-wrapper img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.card-footer-custom {
+    color: var(--text-dark-blue);
+    font-family: 'NeueMontreal', sans-serif;
+}
+
+.month-name {
+    font-size: 1rem;
+}
+
+.arrow-icon {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fade-in-up {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
