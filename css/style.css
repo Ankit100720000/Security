@@ -308,6 +308,10 @@ h6 {
     border-radius: 50%;
     padding: 8px 10px;
 }
+.logo-placeholder img{
+    width: 120px;
+    height: 125px;
+}
 
 /* Translation Text Enhancement */
 .meaning-section p.lead {
