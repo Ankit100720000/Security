@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security Group</title>
+    <title>Security Group - 2026</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,138 +14,224 @@
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Plyr CSS -->
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="landing-page">
 
-    <!-- Hero Section -->
-    <header class="hero-section text-center py-4">
-        <div class="container position-relative">
-            <!-- Logo -->
-            <div class="logo-container mb-4">
-                <div class="logo-placeholder mx-auto">
-                    <img src="logo.png" width="120px" height="100px" alt="">
-                </div>
-            </div>
-
-            <!-- Video Container -->
-            <div class="video-wrapper position-relative mx-auto">
-
-                <!-- Video Player -->
-                <div class="plyr__video-embed" id="player">
-                    <iframe
-                        src="https://www.youtube.com/embed/33ddmx-yDPI?start=2&origin=https://plyr.io&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
-                        allowfullscreen allowtransparency allow="autoplay"></iframe>
-
-                </div>
-
-
+    <!-- Header -->
+    <header class="py-4 text-center">
+        <div class="logo-container mb-3">
+            <div class="logo-placeholder mx-auto">
+                <img src="logo.png" width="120px" height="100px" alt="Logo">
             </div>
         </div>
+        <h1 class="display-3 fw-bold text-dark-blue">2026</h1>
     </header>
 
-    <!-- Quote Section -->
-    <section class="quote-section text-center text-white pt-5 pb-3 mt-5">
-        <div class="container">
-            <h3 class="sanskrit-text mb-3 text-white">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। मा कर्मफलहेतुर्भूर्मा ते
-                सङ्गोऽस्त्वकर्मणि॥ <small class="text-muted" style="font-size: 0.6em;">(BG 2.47)</small></h3>
-        </div>
-    </section>
+    <!-- Calendar Grid -->
+    <section class="container pb-5">
+        <div class="row g-4">
 
-    <!-- Meaning Section -->
-    <section class="meaning-section text-center py-5">
-        <div class="container">
-            <h1 class="fw-bold mb-3">Nishkama Karma</h4>
-                <p class="lead" style="max-width: 700px; margin: 0 auto; font-weight: 400;">
-                    You have a right only to your actions, never to their results.<br>
-                    Do not see yourself as the cause of outcomes, nor be attached to inaction.
-                </p>
-        </div>
-    </section>
+            <!-- Items: 12 months -->
+            <!-- Using a loop logic for brevity in generation, but writing out explicitly for HTML -->
 
-    <!-- About Us Section -->
-    <section class="about-section py-4">
-        <div class="container">
-            <h1 class="text-center fw-bold mb-5">About Us</h2>
-
-            <div class="row g-4 justify-content-center">
-                <!-- Investments Card -->
-                <div class="col-md-5">
-                    <div class="card h-100 service-card border-0">
-                        <div class="card-body text-center d-flex flex-column align-items-center pt-3 px-2 pb-0">
-                            <img class="mb-2" src="logo2.png" width="120px" height="125px" alt="">
-
-                            <p class="small text-muted mb-4 fw-medium">
-                                SECURITY INVESTMENTS LIMITED<br>
-                                AMFI Registered Mutual Fund<br>
-                                Distributor | ARN-1234
-                            </p>
-
-                            <p class="card-text mb-4">
-                                Security Investments Limited is a trusted financial partner with over 60 years of
-                                helping individuals and families make smarter money decisions. With expert guidance
-                                across wealth creation, planning, and protection, we simplify investing so you can build
-                                a secure financial future with confidence.
-                            </p>
-
-                            <div class="social-links mb-4">
-                                <p class="fw-bold mb-2 fs-5">Follow us on Social Media</p>
-                                <a href="#" class="text-dark mx-1"><i class="fa-brands fa-facebook fa-lg"></i></a>
-                                <a href="#" class="text-dark mx-1"><i class="fa-brands fa-instagram fa-lg"></i></a>
-                                <a href="#" class="text-dark mx-1"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-                            </div>
-
+            <!-- January -->
+            <div class="col-md-4 col-sm-6 fade-in-up" style="animation-delay: 0.1s;">
+                <a href="index.html" class="text-decoration-none text-dark">
+                    <div class="calendar-card">
+                        <div class="card-image-wrapper">
+                            <!-- Placeholder image, user to replace -->
+                            <img src="landing-img/january.png" alt="January"
+                                class="img-fluid w-100">
                         </div>
-                        <div
-                            class="card-footer bg-dark-blue text-white p-3 d-flex justify-content-between align-items-center mt-auto border-0 rounded-bottom">
-                            <span class="small">Learn More</span>
-                            <i class="fa-solid fa-chevron-right"></i>
+                        <div class="card-footer-custom d-flex justify-content-between align-items-center p-3">
+                            <span class="month-name fw-bold">January</span>
+                            <i class="fa-solid fa-chevron-right arrow-icon"></i>
                         </div>
                     </div>
-                </div>
-
-                <!-- Insurance Card -->
-                <div class="col-md-5">
-                    <div class="card h-100 service-card border-0">
-                        <div class="card-body text-center d-flex flex-column align-items-center pt-3 px-2 pb-0">
-                            <img class="mb-2" src="logo3.png" width="120px" height="125px" alt="">
-
-
-                            <p class="small text-muted mb-4 fw-medium">
-                                SECURITY INSURANCE BROKERS<br>
-                                (INDIA) PRIVATE LIMITED<br>
-                                IRDA Direct Broker | Code No. 123
-                            </p>
-
-                            <p class="card-text mb-4">
-                                Security Insurance Brokers brings decades of experience in safeguarding what matters
-                                most—your life, health, and assets. With personalised advice, transparent guidance, and
-                                access to top insurance providers, we help you choose protection plans that support your
-                                goals at every stage of life.
-                            </p>
-
-                            <div class="social-links mb-4">
-                                <p class="fw-bold mb-2 fs-5">Follow us on Social Media</p>
-                                <a href="#" class="text-dark mx-1"><i class="fa-brands fa-facebook fa-lg"></i></a>
-                                <a href="#" class="text-dark mx-1"><i class="fa-brands fa-instagram fa-lg"></i></a>
-                                <a href="#" class="text-dark mx-1"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-                            </div>
-
-                        </div>
-                        <div
-                            class="card-footer bg-dark-blue text-white p-3 d-flex justify-content-between align-items-center mt-auto border-0 rounded-bottom">
-                            <span class="small">Learn More</span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
+
+            <!-- February -->
+            <div class="col-md-4 col-sm-6 fade-in-up" style="animation-delay: 0.2s;">
+                <a href="february.html" class="text-decoration-none text-dark">
+                    <div class="calendar-card">
+                        <div class="card-image-wrapper">
+                            <img src="landing-img/FEBRUAR.png" alt="February"
+                                class="img-fluid w-100">
+                        </div>
+                        <div class="card-footer-custom d-flex justify-content-between align-items-center p-3">
+                            <span class="month-name fw-bold">February</span>
+                            <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- March -->
+            <div class="col-md-4 col-sm-6 fade-in-up" style="animation-delay: 0.3s;">
+                <a href="march.html" class="text-decoration-none text-dark">
+                    <div class="calendar-card">
+                        <div class="card-image-wrapper">
+                            <img src="landing-img/march.png" alt="March"
+                                class="img-fluid w-100">
+                        </div>
+                        <div class="card-footer-custom d-flex justify-content-between align-items-center p-3">
+                            <span class="month-name fw-bold">March</span>
+                            <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- April -->
+            <div class="col-md-4 col-sm-6 fade-in-up" style="animation-delay: 0.4s;">
+                <a href="april.html" class="text-decoration-none text-dark">
+                    <div class="calendar-card">
+                        <div class="card-image-wrapper">
+                            <img src="landing-img/april.png" alt="April"
+                                class="img-fluid w-100">
+                        </div>
+                        <div class="card-footer-custom d-flex justify-content-between align-items-center p-3">
+                            <span class="month-name fw-bold">April</span>
+                            <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- May -->
+            <div class="col-md-4 col-sm-6 fade-in-up" style="animation-delay: 0.5s;">
+                <a href="may.html" class="text-decoration-none text-dark">
+                    <div class="calendar-card">
+                        <div class="card-image-wrapper">
+                            <img src="landing-img/may.png" alt="May"
+                                class="img-fluid w-100">
+                        </div>
+                        <div class="card-footer-custom d-flex justify-content-between align-items-center p-3">
+                            <span class="month-name fw-bold">May</span>
+                            <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- June -->
+            <div class="col-md-4 col-sm-6 fade-in-up" style="animation-delay: 0.6s;">
+                <a href="june.html" class="text-decoration-none text-dark">
+                    <div class="calendar-card">
+                        <div class="card-image-wrapper">
+                            <img src="landing-img/june.png" alt="June"
+                                class="img-fluid w-100">
+                        </div>
+                        <div class="card-footer-custom d-flex justify-content-between align-items-center p-3">
+                            <span class="month-name fw-bold">June</span>
+                            <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- July -->
+            <div class="col-md-4 col-sm-6 fade-in-up" style="animation-delay: 0.7s;">
+                <a href="july.html" class="text-decoration-none text-dark">
+                    <div class="calendar-card">
+                        <div class="card-image-wrapper">
+                            <img src="landing-img/july.png" alt="July"
+                                class="img-fluid w-100">
+                        </div>
+                        <div class="card-footer-custom d-flex justify-content-between align-items-center p-3">
+                            <span class="month-name fw-bold">July</span>
+                            <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- August -->
+            <div class="col-md-4 col-sm-6 fade-in-up" style="animation-delay: 0.8s;">
+                <a href="august.html" class="text-decoration-none text-dark">
+                    <div class="calendar-card">
+                        <div class="card-image-wrapper">
+                            <img src="landing-img/.png" alt="August"
+                                class="img-fluid w-100">
+                        </div>
+                        <div class="card-footer-custom d-flex justify-content-between align-items-center p-3">
+                            <span class="month-name fw-bold">August</span>
+                            <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- September -->
+            <div class="col-md-4 col-sm-6 fade-in-up" style="animation-delay: 0.9s;">
+                <a href="september.html" class="text-decoration-none text-dark">
+                    <div class="calendar-card">
+                        <div class="card-image-wrapper">
+                            <img src="landing-img/september.png" alt="September"
+                                class="img-fluid w-100">
+                        </div>
+                        <div class="card-footer-custom d-flex justify-content-between align-items-center p-3">
+                            <span class="month-name fw-bold">September</span>
+                            <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- October -->
+            <div class="col-md-4 col-sm-6 fade-in-up" style="animation-delay: 1.0s;">
+                <a href="october.html" class="text-decoration-none text-dark">
+                    <div class="calendar-card">
+                        <div class="card-image-wrapper">
+                            <img src="landing-img/october.png" alt="October"
+                                class="img-fluid w-100">
+                        </div>
+                        <div class="card-footer-custom d-flex justify-content-between align-items-center p-3">
+                            <span class="month-name fw-bold">October</span>
+                            <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- November -->
+            <div class="col-md-4 col-sm-6 fade-in-up" style="animation-delay: 1.1s;">
+                <a href="november.html" class="text-decoration-none text-dark">
+                    <div class="calendar-card">
+                        <div class="card-image-wrapper">
+                            <img src="landing-img/november.png" alt="November"
+                                class="img-fluid w-100">
+                        </div>
+                        <div class="card-footer-custom d-flex justify-content-between align-items-center p-3">
+                            <span class="month-name fw-bold">November</span>
+                            <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- December -->
+            <div class="col-md-4 col-sm-6 fade-in-up" style="animation-delay: 1.2s;">
+                <a href="december.html" class="text-decoration-none text-dark">
+                    <div class="calendar-card">
+                        <div class="card-image-wrapper">
+                            <img src="landing-img/december.png" alt="December"
+                                class="img-fluid w-100">
+                        </div>
+                        <div class="card-footer-custom d-flex justify-content-between align-items-center p-3">
+                            <span class="month-name fw-bold">December</span>
+                            <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
         </div>
     </section>
 
@@ -158,7 +244,7 @@
                     <div class="footer-logo">
                         <img src="Group 100/Group100.png" width="100px" height="100px" alt="">
                     </div>
-                    <div class="text-white-50 mt-2" style="font-size: 0.8rem; line-height: 1.5;">
+                    <div class="text-white-50 mt-2" style="font-size: 0.9rem; line-height: 1.5;">
                         SECURITY INSURANCE BROKERS<br>
                         (INDIA) PRIVATE LIMITED<br>
                         Category: Direct Broker (Life & General)
@@ -187,20 +273,30 @@
 
                 <!-- Right Logo / Links -->
                 <div class="col-md-4">
-                    <!-- Just mimicking the calendar/links structure from image roughly -->
                     <div class="row g-1 medium small text-white-50" style="font-size: 1rem; font-weight: 300;">
-                        <div class="col-4 "><a href="#" class="text-white-50 text-decoration-none ">January</a></div>
-                        <div class="col-4"><a href="#" class="text-white-50 text-decoration-none ">May</a></div>
-                        <div class="col-4"><a href="#" class="text-white-50 text-decoration-none ">September</a></div>
-                        <div class="col-4"><a href="#" class="text-white-50 text-decoration-none ">February</a></div>
-                        <div class="col-4"><a href="#" class="text-white-50 text-decoration-none ">June</a></div>
-                        <div class="col-4"><a href="#" class="text-white-50 text-decoration-none ">October</a></div>
-                        <div class="col-4"><a href="#" class="text-white-50 text-decoration-none ">March</a></div>
-                        <div class="col-4"><a href="#" class="text-white-50 text-decoration-none ">July</a></div>
-                        <div class="col-4"><a href="#" class="text-white-50 text-decoration-none ">November</a></div>
-                        <div class="col-4"><a href="#" class="text-white-50 text-decoration-none ">April</a></div>
-                        <div class="col-4"><a href="#" class="text-white-50 text-decoration-none ">August</a></div>
-                        <div class="col-4"><a href="#" class="text-white-50 text-decoration-none ">December</a></div>
+                        <div class="col-4 "><a href="index.html" class="text-white-50 text-decoration-none ">January</a>
+                        </div>
+                        <div class="col-4"><a href="may.html" class="text-white-50 text-decoration-none ">May</a></div>
+                        <div class="col-4"><a href="september.html"
+                                class="text-white-50 text-decoration-none ">September</a></div>
+                        <div class="col-4"><a href="february.html"
+                                class="text-white-50 text-decoration-none ">February</a></div>
+                        <div class="col-4"><a href="june.html" class="text-white-50 text-decoration-none ">June</a>
+                        </div>
+                        <div class="col-4"><a href="october.html"
+                                class="text-white-50 text-decoration-none ">October</a></div>
+                        <div class="col-4"><a href="march.html" class="text-white-50 text-decoration-none ">March</a>
+                        </div>
+                        <div class="col-4"><a href="july.html" class="text-white-50 text-decoration-none ">July</a>
+                        </div>
+                        <div class="col-4"><a href="november.html"
+                                class="text-white-50 text-decoration-none ">November</a></div>
+                        <div class="col-4"><a href="april.html" class="text-white-50 text-decoration-none ">April</a>
+                        </div>
+                        <div class="col-4"><a href="august.html" class="text-white-50 text-decoration-none ">August</a>
+                        </div>
+                        <div class="col-4"><a href="december.html"
+                                class="text-white-50 text-decoration-none ">December</a></div>
                     </div>
                 </div>
                 <hr class="mt-2 mb-2">
@@ -210,13 +306,11 @@
                 </div>
 
             </div>
-            <!-- Center Logo duplicate for the design symmetry if needed, but let's stick to standard footer for now as image is a bit blurry on footer details -->
         </div>
     </footer>
 
     <!-- JS Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
     <script src="js/script.js"></script>
 </body>
 

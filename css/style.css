@@ -264,3 +264,119 @@ h6 {
     opacity: 0;
     animation: fadeInUp 0.8s ease-out forwards;
 }
+
+/* Marquee Section */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding: 10px 0;
+    /* Add vertical breathing room */
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 25s linear infinite;
+    /* Slowed down slightly for readability */
+    padding-left: 100%;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.highlight-text {
+    color: #fff;
+    /* User preferred white text without background, respecting that choice but ensuring size */
+    font-size: 2rem !important;
+    padding: 0 20px;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+.card-footer-custom i{
+    color: #000;
+    font-size: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 8px 10px;
+}
+
+/* Translation Text Enhancement */
+.meaning-section p.lead {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    /* Improved line height for readability */
+    letter-spacing: 0.3px;
+    margin-top: 1rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+
+    /* Hero Section */
+    .hero-section {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .hero-section h1.display-5 {
+        font-size: 2rem;
+        /* Smaller month title */
+        margin-bottom: 1.5rem !important;
+    }
+
+    /* Video wrapper padding */
+    .video-wrapper {
+        margin-top: 0;
+        width: 95%;
+        /* More width on mobile */
+    }
+
+    /* Marquee Text */
+    .highlight-text {
+        font-size: 1.1rem;
+        /* Smaller Sanskrit text */
+        padding: 0 10px;
+    }
+
+    /* Translation Text */
+    .meaning-section p.lead {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        padding: 0 5px;
+        /* Prevent edge touching */
+    }
+
+    /* About Section */
+    .about-section h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem !important;
+    }
+
+    .logo-container img {
+        width: 90px !important;
+        height: 80px !important;
+    }
+
+    /* General Padding */
+    .meaning-section,
+    .about-section {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+    .lead br{
+        display: none;
+    }
+    .quote-section {
+        padding-top: 0rem !important;
+        padding-bottom: 0rem !important;
+    }
+}
