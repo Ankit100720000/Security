@@ -138,7 +138,7 @@ h6 {
 }
 
 .sanskrit-text {
-    font-family: 'NeueMontreal';
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 700;
 }
 
@@ -271,8 +271,7 @@ h6 {
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    padding: 10px 0;
-    /* Add vertical breathing room */
+    padding: 15px 0;
 }
 
 .marquee-content {
@@ -295,10 +294,10 @@ h6 {
 .highlight-text {
     color: #fff;
     /* User preferred white text without background, respecting that choice but ensuring size */
-    font-size: 2rem !important;
+    font-size: 2.4rem !important;
     padding: 0 20px;
     display: inline-block;
-    letter-spacing: 0.5px;
+    /* letter-spacing: 0.5px; */
 }
 
 .card-footer-custom i{
@@ -309,8 +308,8 @@ h6 {
     padding: 8px 10px;
 }
 .logo-placeholder img{
-    width: 120px;
-    height: 125px;
+    width: 12vw;
+    height: 12.5vw;
 }
 
 /* Translation Text Enhancement */
@@ -357,6 +356,10 @@ h6 {
         line-height: 1.6;
         padding: 0 5px;
         /* Prevent edge touching */
+    }
+    .about-section{
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     /* About Section */
