@@ -80,7 +80,7 @@ h6 {
 
 /* Video Wrapper */
 .video-wrapper {
-    max-width: 850px;
+    max-width: 950px;
     width: 100%;
     margin-top: 10px;
     border-radius: 10px;
@@ -161,6 +161,10 @@ h6 {
     /* Glassy feel? */
     border-radius: 15px;
     overflow: hidden;
+}
+
+.service-card .card-body{
+    padding: 20px 28px !important;
 }
 
 .card-title {
@@ -308,8 +312,8 @@ h6 {
     padding: 8px 10px;
 }
 .logo-placeholder img{
-    width: 12vw;
-    height: 12.5vw;
+  width: 8.5vw;
+    height: 8vw;
 }
 
 /* Translation Text Enhancement */
@@ -326,8 +330,8 @@ h6 {
 
     /* Hero Section */
     .hero-section {
-        padding-top: 2rem !important;
-        padding-bottom: 2rem !important;
+        padding-top: 0.4rem !important;
+        padding-bottom: 1rem !important;
     }
 
     .hero-section h1.display-5 {
