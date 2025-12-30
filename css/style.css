@@ -9,39 +9,79 @@
     --text-color: #333;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Maku:wght@400;500;700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/106ccd1b14f16971c332e309cec7d90b?family=Font');
+
 @font-face {
     font-family: 'NeueMontreal';
     src: url('../neue-montreal/NeueMontreal-Bold.otf');
+    font-weight: 700;
+}
+
+/* ... existing font faces ... */
+
+/* Quote Section */
+.quote-section {
+    background-color: var(--text-dark-blue);
+    /* border-bottom: 5px solid var(--accent-orange); */
+    /* Just a guess, adds nice break */
+}
+
+.sanskrit-text {
+    font-family: 'Font', sans-serif;
+    font-weight: normal;
 }
 
 @font-face {
     font-family: 'NeueMontreal';
     src: url('../neue-montreal/NeueMontreal-BoldItalic.otf');
+    font-weight: 700;
+    font-style: italic;
 }
 
 @font-face {
     font-family: 'NeueMontreal';
     src: url('../neue-montreal/NeueMontreal-Italic.otf');
+    font-style: italic;
 }
 
 @font-face {
     font-family: 'NeueMontreal';
     src: url('../neue-montreal/NeueMontreal-Light.otf');
+    font-weight: 300;
 }
 
 @font-face {
     font-family: 'NeueMontreal';
     src: url('../neue-montreal/NeueMontreal-LightItalic.otf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('../neue-montreal/NeueMontreal-Medium.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('../neue-montreal/NeueMontreal-MediumItalic.otf');
+    font-weight: 500;
+    font-style: italic;
 }
 
 @font-face {
     font-family: 'NeueMontreal';
     src: url('../neue-montreal/NeueMontreal-Regular.otf');
+    font-weight: 400;
 }
 
 @font-face {
     font-family: 'NeueMontreal';
     src: url('../neue-montreal/NeueMontreal-RegularItalic.otf');
+    font-weight: 400;
+    font-style: italic;
 }
 
 body {
@@ -49,9 +89,11 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'NeueMontreal', sans-serif;
+    font-weight: 500;
     color: var(--text-color);
 }
+
 
 h1,
 h2,
@@ -59,8 +101,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'NeueMontreal';
+    font-family: 'NeueMontreal', sans-serif;
     color: var(--text-dark-blue);
+}
+
+.font-maku {
+    font-family: 'Maku', cursive;
 }
 
 .text-dark-blue {
@@ -80,7 +126,7 @@ h6 {
 
 /* Video Wrapper */
 .video-wrapper {
-    max-width: 950px;
+    max-width: 850px;
     width: 100%;
     margin-top: 10px;
     border-radius: 10px;
@@ -138,8 +184,8 @@ h6 {
 }
 
 .sanskrit-text {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 700;
+    font-family: 'Font';
+    font-weight: normal;
 }
 
 /* Meaning Section */
@@ -163,7 +209,7 @@ h6 {
     overflow: hidden;
 }
 
-.service-card .card-body{
+.service-card .card-body {
     padding: 20px 28px !important;
 }
 
@@ -298,22 +344,23 @@ h6 {
 .highlight-text {
     color: #fff;
     /* User preferred white text without background, respecting that choice but ensuring size */
-    font-size: 2.4rem !important;
+    font-size: 2.2rem !important;
     padding: 0 20px;
     display: inline-block;
-    /* letter-spacing: 0.5px; */
+    letter-spacing: 0.5px;
 }
 
-.card-footer-custom i{
+.card-footer-custom i {
     color: #000;
     font-size: 1rem;
     background-color: #fff;
     border-radius: 50%;
     padding: 8px 10px;
 }
-.logo-placeholder img{
-  width: 8.5vw;
-    height: 8vw;
+
+.logo-placeholder img {
+    width: 115px;
+    height: 120px;
 }
 
 /* Translation Text Enhancement */
@@ -322,6 +369,9 @@ h6 {
     line-height: 1.8;
     /* Improved line height for readability */
     letter-spacing: 0.3px;
+    /* margin-top: 1rem; */
+}
+.meaning-section p.lead:first-child {
     margin-top: 1rem;
 }
 
@@ -361,7 +411,8 @@ h6 {
         padding: 0 5px;
         /* Prevent edge touching */
     }
-    .about-section{
+
+    .about-section {
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -383,9 +434,11 @@ h6 {
         padding-top: 1rem !important;
         padding-bottom: 1rem !important;
     }
-    .lead br{
+
+    .lead br {
         display: none;
     }
+
     .quote-section {
         padding-top: 0rem !important;
         padding-bottom: 0rem !important;
